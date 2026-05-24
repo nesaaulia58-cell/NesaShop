@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - NesaShop</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Nesa<span>Shop</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="produk.html" class="nav-link active">Produk</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tentang.html" class="nav-link">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a href="kontak.html" class="nav-link">Kontak</a>
+                </li>
+                <li class="nav-item">
+                    <a href="keranjang.html" class="nav-link">Keranjang</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Produk -->
+    <section class="hero-produk">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Semua Produk Kami</h1>
+                <p class="hero-desc">Pilih skincare terbaik untuk rutinitas perawatan kulitmu</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Kategori -->
+    <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="serum">Serum</button>
+        <button class="filter-btn" data-filter="cleanser">Cleanser</button>
+        <button class="filter-btn" data-filter="moisturizer">Moisturizer</button>
+        <button class="filter-btn" data-filter="masker">Masker</button>
+    </div>
+
+    <!-- Produk Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+            </div>
+        </div>
+        <div class="products-grid">
+            <div class="product-card" data-category="serum">
+                <img src="gambar1.jpg" alt="Serum">
+                <div class="product-info">
+                    <p>serum</p>
+                    <h3 class="product-name">Brightening Vitamin C Serum</h3>
+                    <p class="product-price">Rp 189.000</p>
+                    <a href="detail1.html" class="selengkapnya-btn">selengkapnya</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="serum">
+                <img src="gambar2.jpg" alt="Serum">
+                <div class="product-info">
+                    <p>serum</p>
+                    <h3 class="product-name">Whitening Hyaluronic Serum</h3>
+                    <p class="product-price">Rp 159.000</p>
+                    <a href="detail2.html" class="selengkapnya-btn">selengkapnya</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="serum">
+                <img src="gambar3.jpg" alt="Serum">
+                <div class="product-info">
+                    <p>serum</p>
+                    <h3 class="product-name">Brightening glow Serum</h3>
+                    <p class="product-price">Rp 135.000</p>
+                    <a href="detail3.html" class="selengkapnya-btn">selengkapnya</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="cleanser">
+                <img src="gambar4.jpg" alt="Cleanser">
+                <div class="product-info">
+                    <p>Cleanser</p>
+                    <h3 class="product-name">Gentle Foaming Cleanser</h3>
+                    <p class="product-price">Rp 120.000</p>
+                    <a href="detail4.html" class="selengkapnya-btn">selengkapnya</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="cleanser">
+                <img src="gambar5.jpg" alt="Cleanser">
+                <div class="product-info">
+                    <p>Cleanser</p>
+                    <h3 class="product-name">Acne Treatment Cleanser</h3>
+                    <p class="product-price">Rp 130.000</p>
+                    <a href="detail5.html" class="selengkapnya-btn">selengkapnya</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="cleanser">
+                <img src="gambar6.jpg" alt="Cleanser">
+                <div class="product-info">
+                    <p>Cleanser</p>
+                    <h3 class="product-name">Brightening Cleanser Glow</h3>
+                    <p class="product-price">Rp 159.000</p>
+                    <a href="detail6.html" class="selengkapnya-btn">selengkapnya</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="moisturizer">
+                <img src="gambar7.jpg" alt="moisturizer">
+                <div class="product-info">
+                    <p>Moisturizer</p>
+                    <h3 class="product-name">Hydrating Moisturizer Cream</h3>
+                    <p class="product-price">Rp 188.000</p>
+                    <a href="detail7.html" class="selengkapnya-btn">selengkapnya</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="moisturizer">
+                <img src="gambar8.jpg" alt="moisturizer">
+                <div class="product-info">
+                    <p>Moisturizer</p>
+                    <h3 class="product-name">Aloe Vera Gel Moisturizer</h3>
+                    <p class="product-price">Rp 150.000</p>
+                    <a href="detail8.html" class="selengkapnya-btn">selengkapnya</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="moisturizer">
+                <img src="gambar9.jpg" alt="moisturizer">
+                <div class="product-info">
+                    <p>Moisturizer</p>
+                    <h3 class="product-name">Brightening Day Cream</h3>
+                    <p class="product-price">Rp 200.000</p>
+                    <a href="detail9.html" class="selengkapnya-btn">selengkapnya</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="masker">
+                <img src="gambar10.jpg" alt="masker">
+                <div class="product-info">
+                    <p>Masker</p>
+                    <h3 class="product-name">Sheet Mask Hydrating</h3>
+                    <p class="product-price">Rp 130.000</p>
+                    <a href="detail10.html" class="selengkapnya-btn">selengkapnya</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="masker">
+                <img src="gambar11.jpg" alt="masker">
+                <div class="product-info">
+                    <p>Masker</p>
+                    <h3 class="product-name">Clay Mask Detox Brightening</h3>
+                    <p class="product-price">Rp 140.000</p>
+                    <a href="detail11.html" class="selengkapnya-btn">selengkapnya</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="masker">
+                <img src="gambar12.jpg" alt="masker">
+                <div class="product-info">
+                    <p>Masker</p>
+                    <h3 class="product-name">Sleeping Mask Glow Finish</h3>
+                    <p class="product-price">Rp 160.000</p>
+                    <a href="detail12.html" class="selengkapnya-btn">selengkapnya</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Banner -->
+        <section class="cta-banner">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Belum Yakin? Konsultasi Gratis!</h2>
+                    <a href="kontak.html" class="cta-button">Konsultasi Sekarang</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Nesa<span>Shop</span></h3>
+                        <p>Skincare premium untuk kulit sehat dan glowing setiap hari.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="produk.html">Produk</a></li>
+                            <li><a href="tentang.html">Tentang</a></li>
+                            <li><a href="kontak.html">Kontak</a></li>
+                            <li><a href="keranjang.html">Keranjang</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Hubungi Kami</h4>
+                        <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+                        <p><i class="fas fa-envelope"></i> hello@nesashop.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 NesaShop. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="produk.js"></script>
+</body>
+
+</html>

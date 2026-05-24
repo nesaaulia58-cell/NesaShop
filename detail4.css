@@ -1,0 +1,450 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-logo h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nav-logo span {
+    background: linear-gradient(135deg, #c084fc, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(135deg, #c084fc, #8b5cf6);
+}
+
+.nav-link:hover {
+    color: #8b5cf6;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+
+/* ===== 1. PENGATURAN DASAR ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fcfaff; /* Background ungu sangat muda */
+    color: #333;
+}
+
+/* ===== 2. GRID UNTUK 12 KOTAK PRODUK ===== */
+.products-grid {
+    display: grid;
+    /* Membuat 4 kolom (di layar laptop) */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 25px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Kartu Produk */
+.product-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid #f0eaff;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(138, 43, 226, 0.2);
+}
+
+.product-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-category {
+    color: #8a2be2;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.product-name {
+    font-size: 16px;
+    margin: 8px 0;
+    font-weight: 600;
+}
+
+.product-price {
+    color: #8a2be2;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Tombol Selengkapnya di Halaman Utama */
+.selengkapnya-btn {
+    display: block;
+    text-align: center;
+    background: #a886ff; /* Ungu Lavender */
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.selengkapnya-btn:hover {
+    background: #8a2be2; /* Ungu Royal */
+}
+
+/* ===== 3. LAYOUT DETAIL (VERSI KEBAYA) ===== */
+.detail-wrapper {
+    max-width: 1100px;
+    margin: 100px auto 50px;
+    display: flex; /* Kiri dan Kanan */
+    gap: 60px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    align-items: flex-start;
+}
+
+.image-left {
+    flex: 1; /* Mengambil setengah ruang */
+}
+
+.image-left img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.info-right {
+    flex: 1; /* Mengambil setengah ruang */
+}
+
+.info-right h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.detail-price {
+    font-size: 36px;
+    color: #d9534f; /* Merah harga seperti contoh kebaya */
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.detail-desc {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Tombol Orange seperti contoh Kebaya */
+.btn-beli-wa {
+    display: inline-block;
+    background: #c374df;
+    color: white;
+    padding: 15px 45px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 4px 15px rgba(255, 177, 0, 0.3);
+    transition: 0.3s;
+}
+
+.btn-beli-wa:hover {
+    background: #c374df;
+    transform: scale(1.05);
+}
+
+/* ===== 4. RESPONSIVE (UNTUK HP) ===== */
+@media (max-width: 992px) {
+    .products-grid { grid-template-columns: repeat(2, 1fr); } /* 2 kotak di tablet */
+    .detail-wrapper { flex-direction: column; gap: 30px; } /* Gambar di atas, teks di bawah */
+}
+
+@media (max-width: 600px) {
+    .products-grid { grid-template-columns: 1fr; } /* 1 kotak di HP */
+}
+/* Container Utama Detail */
+.detail-wrapper {
+    display: flex;          /* Ini kunci agar kiri-kanan */
+    flex-direction: row;    /* Memaksa posisi sejajar horizontal */
+    align-items: flex-start;
+    gap: 50px;              /* Jarak antara gambar dan teks */
+    max-width: 1200px;
+    margin: 100px auto;     /* Jarak dari navbar */
+    padding: 20px;
+}
+
+/* Sisi Gambar (Kiri) */
+.image-left {
+    flex: 1;                /* Ambil 50% layar */
+    max-width: 500px;
+}
+
+.image-left img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(138, 43, 226, 0.15); /* Bayangan ungu lembut */
+}
+
+/* Sisi Informasi (Kanan) */
+.info-right {
+    flex: 1;                /* Ambil 50% sisanya */
+    display: flex;
+    flex-direction: column;
+}
+
+.info-right h1 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.detail-price {
+    font-size: 32px;
+    color: #8a2be2;         /* Ungu cantik */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.detail-desc {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Tombol Beli */
+.btn-beli-wa {
+    background: #a65db4;    /* Kuning emas agar kontras dengan ungu */
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    width: fit-content;
+}
+
+/* Responsif untuk HP: Jadi tumpuk atas-bawah kalau layar kecil */
+@media (max-width: 768px) {
+    .detail-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .btn-beli-wa {
+        margin: 0 auto;
+    }
+}
+body {
+  background: #f9f7ff;
+  font-family: sans-serif;
+}
+
+.detail-container {
+  display: flex;
+  gap: 40px;
+  padding: 50px;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.detail-image img {
+  width: 400px;
+  border-radius: 15px;
+}
+
+.detail-info {
+  max-width: 500px;
+}
+
+.price {
+  color: #7b3fe4;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.btn-buy {
+  display: inline-block;
+  background: #7b3fe4;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+/* ===== FOOTER ===== */
+/* ===== FOOTER MODERN SOFT & CLEAN ===== */
+.footer {
+    background: #fdfbff; /* Warna putih dengan sentuhan ungu pastel ultra soft */
+    color: #4a3674; /* Teks ungu tua lembut agar mudah dibaca */
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    color: #4a3674; 
+    margin-bottom: 1rem;
+}
+
+.footer-section h3 span {
+    background: linear-gradient(135deg, #c084fc, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #76619c; /* Link menu dengan warna ungu medium yang teduh */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #8b5cf6; 
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background: rgba(139, 92, 246, 0.08); /* Lingkaran ungu transparan yang soft */
+    color: #8b5cf6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #8b5cf6;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(139, 92, 246, 0.1); /* Garis pembatas tipis */
+    color: #9382b3;
+    font-size: 0.9rem;
+}
