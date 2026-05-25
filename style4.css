@@ -1,4 +1,3 @@
-/* ===== BASE STYLES ===== */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
-    overflow-x: hidden; /* Mencegah scroll horizontal */
+    overflow-x: hidden; 
 }
 
 .container {
@@ -18,14 +17,11 @@ body {
     padding: 0 20px;
 }
 
-/* ===== NAVBAR (DIREVISI) ===== */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.95);
-    
-    /* Tulis -webkit- dulu baru versi standar */
     -webkit-backdrop-filter: blur(10px); 
     backdrop-filter: blur(10px);
     
@@ -56,16 +52,14 @@ body {
 .nav-logo span {
     font-weight: 700;
     background: linear-gradient(135deg, #c084fc, #8b5cf6);
-    
-    /* Gunakan urutan ini agar garis kuning hilang */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text; /* Tambahkan baris ini */
+    background-clip: text; 
 }
 .nav-logo {
     text-decoration: none;
     color: inherit;
-    display: flex; /* Tambahan agar logo dan teks "Shop" sejajar rapi */
+    display: flex; 
     align-items: center;
 }
 
@@ -79,7 +73,7 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    position: relative; /* PERBAIKAN: Wajib agar ::after bekerja */
+    position: relative;
     transition: 0.3s;
 }
 
@@ -96,7 +90,7 @@ body {
 
 .nav-link:hover { color: #8b5cf6; }
 
-/* Hamburger Menu */
+
 .hamburger { 
     display: none; 
     flex-direction: column; 
@@ -111,7 +105,7 @@ body {
     transition: 0.3s; 
 }
 
-/* ===== HERO CONTACT ===== */
+
 .hero-contact {
     min-height: 50vh;
     display: flex;
@@ -128,11 +122,10 @@ body {
     background: linear-gradient(135deg, #6b46c1, #8b5cf6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text; /* Tambahkan versi standar ini */
-    color: transparent; /* Tambahkan ini sebagai cadangan */
+    background-clip: text;
+    color: transparent; 
 }
 
-/* ===== CONTACT SECTION ===== */
 .contact-section {
     padding: 80px 0;
     background: #fff;
@@ -140,7 +133,7 @@ body {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 1fr 380px; /* Lebar sidebar disesuaikan */
+    grid-template-columns: 1fr 380px; 
     gap: 3rem;
     align-items: start;
 }
@@ -172,7 +165,7 @@ body {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 14px 20px 14px 50px; /* Padding kiri untuk icon */
+    padding: 14px 20px 14px 50px; 
     border: 2px solid #f0e6ff;
     border-radius: 12px;
     font-family: inherit;
@@ -192,7 +185,7 @@ body {
     position: absolute;
     left: 18px;
     top: 50%;
-    transform: translateY(-50%); /* PERBAIKAN: Center vertikal sempurna */
+    transform: translateY(-50%); 
     color: #8b5cf6;
 }
 
@@ -225,7 +218,6 @@ body {
     flex-shrink: 0;
 }
 
-/* ===== RESPONSIVE (PERBAIKAN TOTAL) ===== */
 @media (max-width: 992px) {
     .contact-grid {
         grid-template-columns: 1fr;
@@ -253,16 +245,14 @@ body {
 
     .nav-link { font-size: 1.2rem; }
 
-    /* Animasi Hamburger ke X */
     .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
     .hamburger.active .bar:nth-child(2) { opacity: 0; }
     .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 }
-/* ===== FOOTER ===== */
-/* ===== FOOTER MODERN SOFT & CLEAN ===== */
+
 .footer {
-    background: #fdfbff; /* Warna putih dengan sentuhan ungu pastel ultra soft */
-    color: #4a3674; /* Teks ungu tua lembut agar mudah dibaca */
+    background: #fdfbff; 
+    color: #4a3674;
     padding: 60px 0 20px;
 }
 
@@ -295,7 +285,7 @@ body {
 }
 
 .footer-section a {
-    color: #76619c; /* Link menu dengan warna ungu medium yang teduh */
+    color: #76619c; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -313,7 +303,7 @@ body {
 .social-links a {
     width: 40px;
     height: 40px;
-    background: rgba(139, 92, 246, 0.08); /* Lingkaran ungu transparan yang soft */
+    background: rgba(139, 92, 246, 0.08); 
     color: #8b5cf6;
     border-radius: 50%;
     display: flex;
@@ -331,12 +321,11 @@ body {
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid rgba(139, 92, 246, 0.1); /* Garis pembatas tipis */
+    border-top: 1px solid rgba(139, 92, 246, 0.1); 
     color: #9382b3;
     font-size: 0.9rem;
 }
 
-/* ===== ANIMATIONS ===== */
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -352,7 +341,6 @@ body {
     animation: fadeUp 0.8s ease forwards;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -404,48 +392,46 @@ body {
 .spacer-top {
     height: 90px;
 }
-/* Perbaikan posisi ikon di kolom pesan */
+
 .contact-form .input-group {
     position: relative;
     display: flex;
-    align-items: flex-start; /* Biar ikon nempel di atas sejajar baris pertama */
+    align-items: flex-start; 
 }
 
 .contact-form .input-group i {
     position: absolute;
     left: 15px;
-    top: 18px; /* Atur angka ini naik/turun biar pas di tengah baris pertama */
+    top: 18px; 
     color: #8b5cf6;
     z-index: 10;
 }
 
 .contact-form textarea {
-    padding-left: 45px !important; /* Kasih ruang biar teks ga nabrak ikon */
+    padding-left: 45px !important; 
     padding-top: 15px !important;
 }
 textarea {
-    padding-left: 45px !important; /* Beri ruang untuk ikon di sisi kiri */
+    padding-left: 45px !important; 
     padding-top: 15px;
 }
-/* 1. Paksa pembungkusnya jadi posisi relatif */
+
 .footer-section .input-group, 
 .contact-form .input-group {
     position: relative !important;
-    display: block !important; /* Kadang flex malah bikin berantakan kalau strukturnya gak pas */
+    display: block !important; 
 }
 
-/* 2. Paksa Ikonnya pindah ke atas kiri di dalam kotak */
 .footer-section .input-group i,
 .contact-form .input-group i {
     position: absolute !important;
     left: 15px !important;
-    top: 15px !important; /* Angka ini yang mengatur tinggi rendahnya ikon */
+    top: 15px !important;
     transform: none !important;
     margin: 0 !important;
     z-index: 5 !important;
 }
 
-/* 3. Paksa Textarea (kotak pesan) kasih ruang di kiri agar teks gak nabrak ikon */
 .footer-section textarea,
 .contact-form textarea {
     padding-left: 45px !important; 

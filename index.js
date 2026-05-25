@@ -1,10 +1,8 @@
-// ===== DOM ELEMENTS =====
 const navbar = document.getElementById('navbar');
 const navMenu = document.querySelector('.nav-menu');
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelectorAll('.nav-link');
 
-// ===== SMOOTH SCROLL =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -18,7 +16,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ===== NAVBAR BACKGROUND ON SCROLL =====
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         navbar.style.background = 'rgba(255, 255, 255, 0.98)';
@@ -29,19 +26,18 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ===== MOBILE MENU TOGGLE =====
 hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// CLOSE MOBILE MENU WHEN CLICKING LINK
+
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         navMenu.classList.remove('active');
     });
 });
 
-// ===== SCROLL ANIMATIONS =====
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -55,12 +51,12 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// OBSERVE ELEMENTS
+
 document.querySelectorAll('.product-card, .feature-item, .testimonial-card').forEach(el => {
     observer.observe(el);
 });
 
-// ===== NAVBAR ACTIVE LINK =====
+
 window.addEventListener('scroll', () => {
     let current = '';
     const sections = document.querySelectorAll('section');
@@ -82,18 +78,14 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// ===== BUTTON INTERACTIONS =====
 document.querySelectorAll('.buy-btn, .cta-button').forEach(btn => {
     btn.addEventListener('click', function(e) {
         if (this.classList.contains('buy-btn')) {
             e.preventDefault();
-            // Simulate WhatsApp redirect
             window.open('https://wa.me/6281234567890?text=Saya%20ingin%20pesan%20produk%20ini!', '_blank');
         }
     });
 });
-
-// ===== INITIAL LOAD ANIMATION =====
 window.addEventListener('load', () => {
     document.body.style.opacity = '0';
     document.body.style.transition = 'opacity 0.5s ease';

@@ -1,4 +1,4 @@
-/* ===== IMPORT BASE STYLES (sama seperti home) ===== */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 
@@ -21,7 +21,6 @@ body {
     padding: 0 20px;
 }
 
-/* ===== NAVBAR (IDENTIK DENGAN HOME) ===== */
 .navbar {
     position: fixed;
     top: 0;
@@ -100,7 +99,6 @@ body {
     transition: 0.3s;
 }
 
-/* ===== HERO PRODUK ===== */
 .hero-produk {
     min-height: 60vh;
     display: flex;
@@ -126,11 +124,11 @@ body {
     max-width: 600px;
     margin: 0 auto;
 }
-/* --- WARNA & TEMA --- */
+
 :root {
-    --ungu-utama: #8a2be2;    /* Ungu Royal */
-    --ungu-muda: #a886ff;     /* Lavender */
-    --ungu-bg: #fcfaff;       /* Background Ungu Sangat Muda */
+    --ungu-utama: #8a2be2;    
+    --ungu-muda: #a886ff;     
+    --ungu-bg: #fcfaff;      
 }
 
 body {
@@ -138,7 +136,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* --- GRID 12 KOTAK PRODUK --- */
 .products-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 kotak ke samping */
@@ -182,11 +179,10 @@ body {
 
 .selengkapnya-btn:hover { background: var(--ungu-utama); }
 
-/* --- STYLE DETAIL (VERSI KEBAYA) --- */
 .detail-container {
     max-width: 1100px;
     margin: 100px auto;
-    display: flex; /* Bikin kiri-kanan */
+    display: flex; 
     gap: 50px;
     padding: 40px;
     background: white;
@@ -200,7 +196,7 @@ body {
 .detail-price { color: #d9534f; font-size: 36px; font-weight: bold; margin: 20px 0; }
 
 .btn-beli {
-    background: #ffb100; /* Orange seperti contoh kebaya */
+    background: #ffb100;
     color: white;
     padding: 15px 40px;
     text-decoration: none;
@@ -209,12 +205,12 @@ body {
     display: inline-block;
 }
 
-/* Biar rapi di HP */
+
 @media (max-width: 768px) {
     .products-grid { grid-template-columns: repeat(2, 1fr); }
     .detail-container { flex-direction: column; }
 }
-/* ===== FILTER SECTION ===== */
+
 .filter-section {
     padding: 60px 0;
     background: #fff;
@@ -399,7 +395,6 @@ body {
     box-shadow: 0 12px 30px rgba(160, 132, 252, 0.4);
 }
 
-/* ===== CTA BANNER ===== */
 .cta-banner {
     background: linear-gradient(135deg, #8b5cf6, #c084fc);
     padding: 80px 0;
@@ -419,7 +414,7 @@ body {
     display: inline-block;
     background: rgba(255, 255, 255, 0.2);
     -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);/* Tambahkan ini agar lebih aman */
+    backdrop-filter: blur(10px);
     color: white;
     padding: 16px 32px;
     border: 2px solid rgba(255,255,255,0.3);
@@ -436,11 +431,9 @@ body {
     box-shadow: 0 15px 40px rgba(0,0,0,0.2);
 }
 
-/* ===== FOOTER (IDENTIK DENGAN HOME) ===== */
-/* ===== FOOTER MODERN SOFT & CLEAN ===== */
 .footer {
-    background: #fdfbff; /* Warna putih dengan sentuhan ungu pastel ultra soft */
-    color: #4a3674; /* Teks ungu tua lembut agar mudah dibaca */
+    background: #fdfbff; 
+    color: #4a3674; 
     padding: 60px 0 20px;
 }
 
@@ -473,7 +466,7 @@ body {
 }
 
 .footer-section a {
-    color: #76619c; /* Link menu dengan warna ungu medium yang teduh */
+    color: #76619c; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -491,7 +484,7 @@ body {
 .social-links a {
     width: 40px;
     height: 40px;
-    background: rgba(139, 92, 246, 0.08); /* Lingkaran ungu transparan yang soft */
+    background: rgba(139, 92, 246, 0.08); 
     color: #8b5cf6;
     border-radius: 50%;
     display: flex;
@@ -509,12 +502,12 @@ body {
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid rgba(139, 92, 246, 0.1); /* Garis pembatas tipis */
+    border-top: 1px solid rgba(139, 92, 246, 0.1); 
     color: #9382b3;
     font-size: 0.9rem;
 }
 
-/* ===== ANIMATIONS ===== */
+
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -534,7 +527,6 @@ body {
     display: none !important;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -581,39 +573,35 @@ body {
         font-size: 1.8rem;
     }
 }
-/* Mengunci ukuran gambar agar seragam dan rapi */
+
 .product-card img {
-    width: 100% !important;   /* Memaksa lebar mengikuti kotak */
-    height: 250px !important; /* Memaksa tinggi semua gambar sama */
-    object-fit: cover;        /* Gambar dipotong rapi, gak gepeng */
+    width: 100% !important;   
+    height: 250px !important; 
+    object-fit: cover;        
     display: block;
 }
 
-/* Memastikan grid produk rapi */
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
 }
-/* 1. MENGHILANGKAN GARIS UNGU (OUTLINE) SAAT DIKLIK/DITEKAN */
 .product-card:focus,
 .product-card:active,
 .buy-btn:focus,
 .buy-btn:active {
     outline: none !important;
     box-shadow: none !important;
-    -webkit-tap-highlight-color: transparent; /* Menghilangkan highlight biru di HP */
+    -webkit-tap-highlight-color: transparent;
 }
 
-/* 2. MENGHILANGKAN EFEK BAYANGAN & TRANSISI */
 .product-card:hover,
 .product-card:active {
     transform: none !important;
     box-shadow: 0 10px 40px rgba(0,0,0,0.08) !important;
 }
 
-/* 3. MEMATIKAN INTERAKSI PADA GAMBAR */
 .product-image img, 
 .product-card:hover .product-image img {
     pointer-events: none;
@@ -621,7 +609,7 @@ body {
     -webkit-user-select: none;
     user-select: none;
 }
-/* 4. MENGHILANGKAN GARIS GRADIENT UNGU DI ATAS KARTU */
+
 .product-card::before {
-    display: none !important; /* Menghapus garis ungu yang muncul di bagian atas card */
+    display: none !important; 
 }

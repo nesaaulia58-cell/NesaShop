@@ -1,10 +1,8 @@
-// ===== DOM ELEMENTS =====
 const navbar = document.getElementById('navbar');
 const navMenu = document.querySelector('.nav-menu');
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelectorAll('.nav-link');
 
-// ===== NAVBAR MOBILE =====
 hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
@@ -15,7 +13,6 @@ navLinks.forEach(link => {
     });
 });
 
-// Navbar scroll effect
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
@@ -27,7 +24,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ===== SCROLL ANIMATIONS =====
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -41,12 +37,11 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all animate elements
 document.querySelectorAll('.story-text, .vision-card, .brand-item, .stat-item').forEach(el => {
     observer.observe(el);
 });
 
-// Counter animation for stats
+
 function animateCounters() {
     const counters = document.querySelectorAll('.stat-number');
     
@@ -79,12 +74,10 @@ function animateCounters() {
     });
 }
 
-// ===== INIT =====
 document.addEventListener('DOMContentLoaded', () => {
     animateCounters();
 });
 
-// Page load
 window.addEventListener('load', () => {
     document.body.style.opacity = '0';
     document.body.style.transition = 'opacity 0.5s ease';

@@ -16,7 +16,6 @@ body {
     padding: 0 20px;
 }
 
-/* ===== NAVBAR ===== */
 .navbar {
     position: fixed;
     top: 0;
@@ -30,7 +29,7 @@ body {
     transition: all 0.3s ease;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
-/* Bagian Nav-Container */
+
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -105,7 +104,7 @@ body {
     transition: 0.3s;
 }
 
-/* ===== HERO ABOUT ===== */
+
 .hero-about {
     min-height: 70vh;
     display: flex;
@@ -132,7 +131,7 @@ body {
     margin: 0 auto;
 }
 
-/* ===== STORY SECTION ===== */
+
 .story-section {
     padding: 120px 0;
     background: #fff;
@@ -206,7 +205,6 @@ body {
     color: #c084fc;
 }
 
-/* ===== VISION SECTION ===== */
 .vision-section {
     padding: 120px 0;
     background: linear-gradient(135deg, #f8f4ff 0%, #e8d5ff 100%);
@@ -255,7 +253,6 @@ body {
     color: #333;
 }
 
-/* ===== BRAND SECTION ===== */
 .brand-section {
     padding: 120px 0;
     background: #fff;
@@ -297,7 +294,6 @@ body {
     color: #333;
 }
 
-/* ===== CTA SECTION ===== */
 .cta-section {
     background: linear-gradient(135deg, #8b5cf6, #c084fc);
     padding: 100px 0;
@@ -314,7 +310,6 @@ body {
     display: inline-block;
     background: rgba(255, 255, 255, 0.2);
     
-    /* Urutan yang benar: webkit dulu baru standar */
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     
@@ -333,11 +328,9 @@ body {
     box-shadow: 0 20px 50px rgba(0,0,0,0.3);
 }
 
-/* ===== FOOTER ===== */
-/* ===== FOOTER MODERN SOFT & CLEAN ===== */
 .footer {
-    background: #fdfbff; /* Warna putih dengan sentuhan ungu pastel ultra soft */
-    color: #4a3674; /* Teks ungu tua lembut agar mudah dibaca */
+    background: #fdfbff; 
+    color: #4a3674; 
     padding: 60px 0 20px;
 }
 
@@ -370,7 +363,7 @@ body {
 }
 
 .footer-section a {
-    color: #76619c; /* Link menu dengan warna ungu medium yang teduh */
+    color: #76619c; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -388,7 +381,7 @@ body {
 .social-links a {
     width: 40px;
     height: 40px;
-    background: rgba(139, 92, 246, 0.08); /* Lingkaran ungu transparan yang soft */
+    background: rgba(139, 92, 246, 0.08); 
     color: #8b5cf6;
     border-radius: 50%;
     display: flex;
@@ -406,12 +399,11 @@ body {
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid rgba(139, 92, 246, 0.1); /* Garis pembatas tipis */
+    border-top: 1px solid rgba(139, 92, 246, 0.1); 
     color: #9382b3;
     font-size: 0.9rem;
 }
 
-/* ===== ANIMATIONS ===== */
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -427,7 +419,6 @@ body {
     animation: fadeUp 0.8s ease forwards;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -476,46 +467,43 @@ body {
         font-size: 1.8rem;
     }
 }
-/* Pastikan namanya sama persis dengan yang ada di HTML */
+
 .image-placeholder {
     width: 100%;
-    height: 1000px; /* Kamu bisa ubah tingginya sesuai selera */
-    background: #e8d5ff; /* Warna cadangan jika gambar gagal loading */
+    height: 1000px; 
+    background: #e8d5ff; 
     border-radius: 24px;
-    overflow: hidden; /* Penting! Supaya gambar terpotong rapi di pojokan */
+    overflow: hidden;
     display: flex;
 }
 
 .image-placeholder img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ini kuncinya supaya gambar penuh sekotak tanpa gepeng */
+    object-fit: cover; 
     object-position: center;
 }
-/* Ini untuk mengatur kotak ungunya */
+
 .image-placeholder {
     width: 100% !important;
-    max-width: 400px !important; /* ATUR KECILNYA DI SINI (misal 300px atau 400px) */
-    height: 300px !important;    /* Atur tingginya di sini */
-    margin: 0 auto !important;   /* Biar tetap di tengah */
+    max-width: 400px !important; 
+    height: 300px !important;   
+    margin: 0 auto !important;  
     background: #e8d5ff !important;
     border-radius: 24px !important;
-    overflow: hidden !important; /* Biar gambar gak luber keluar kotak */
+    overflow: hidden !important;
     display: flex !important;
 }
 
-/* Ini untuk mengatur gambarnya supaya pas di dalam kotak */
 .image-placeholder img {
     width: 200% !important;
     height: 200% !important;
-    object-fit: cover !important; /* Supaya full tapi gak penyet */
+    object-fit: cover !important;
     object-position: center !important;
 }
 .image-placeholder {
     width: 100% !important;
-    /* Naikkan ke 500px atau 550px agar tidak kekecilan */
     max-width: 500px !important; 
-    /* Naikkan tinggi kotak agar wajahnya lebih kelihatan */
     height: 450px !important;    
     
     margin: 0 auto !important;
@@ -528,30 +516,27 @@ body {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
-    /* Kita geser fokusnya sedikit ke atas supaya wajah tidak terpotong */
     object-position: center 20% !important; 
 }
-/* 1. Menghilangkan efek miring pada ikon brand */
+
 .brand-item:hover .brand-icon {
-    transform: none !important; /* Menghapus scale dan rotate(5deg) */
+    transform: none !important;
 }
 
-/* 2. Menghilangkan efek zoom/angkat pada kartu visi */
 .vision-card:hover {
-    transform: none !important; /* Menghapus translateY(-10px) */
+    transform: none !important; 
 }
 
-/* 3. Menghilangkan efek angkat pada tombol CTA */
+
 .cta-button:hover {
-    transform: none !important; /* Menghapus translateY(-5px) */
+    transform: none !important; 
 }
 
-/* 4. Menghilangkan efek gerak pada icon sosmed di footer */
 .social-links a:hover {
     transform: none !important;
 }
 
-/* Tambahan: Memastikan saat dipencet (active) tidak ada gerakan sama sekali */
+
 .brand-item:active .brand-icon,
 .vision-card:active,
 .cta-button:active,

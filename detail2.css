@@ -1,4 +1,3 @@
-/* ===== RESET & BASE STYLES ===== */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +17,6 @@ body {
     padding: 0 20px;
 }
 
-/* ===== NAVBAR ===== */
 .navbar {
     position: fixed;
     top: 0;
@@ -96,8 +94,6 @@ body {
     transition: 0.3s;
 }
 
-
-/* ===== 1. PENGATURAN DASAR ===== */
 * {
     margin: 0;
     padding: 0;
@@ -106,14 +102,12 @@ body {
 }
 
 body {
-    background-color: #fcfaff; /* Background ungu sangat muda */
+    background-color: #fcfaff; 
     color: #333;
 }
 
-/* ===== 2. GRID UNTUK 12 KOTAK PRODUK ===== */
 .products-grid {
     display: grid;
-    /* Membuat 4 kolom (di layar laptop) */
     grid-template-columns: repeat(4, 1fr); 
     gap: 25px;
     padding: 40px 20px;
@@ -121,7 +115,6 @@ body {
     margin: 0 auto;
 }
 
-/* Kartu Produk */
 .product-card {
     background: #fff;
     border-radius: 15px;
@@ -166,11 +159,10 @@ body {
     margin-bottom: 15px;
 }
 
-/* Tombol Selengkapnya di Halaman Utama */
 .selengkapnya-btn {
     display: block;
     text-align: center;
-    background: #a886ff; /* Ungu Lavender */
+    background: #a886ff;
     color: white;
     text-decoration: none;
     padding: 12px;
@@ -180,14 +172,13 @@ body {
 }
 
 .selengkapnya-btn:hover {
-    background: #8a2be2; /* Ungu Royal */
+    background: #8a2be2; 
 }
 
-/* ===== 3. LAYOUT DETAIL (VERSI KEBAYA) ===== */
 .detail-wrapper {
     max-width: 1100px;
     margin: 100px auto 50px;
-    display: flex; /* Kiri dan Kanan */
+    display: flex;
     gap: 60px;
     background: #fff;
     padding: 40px;
@@ -197,7 +188,7 @@ body {
 }
 
 .image-left {
-    flex: 1; /* Mengambil setengah ruang */
+    flex: 1; 
 }
 
 .image-left img {
@@ -207,7 +198,7 @@ body {
 }
 
 .info-right {
-    flex: 1; /* Mengambil setengah ruang */
+    flex: 1; 
 }
 
 .info-right h1 {
@@ -218,7 +209,7 @@ body {
 
 .detail-price {
     font-size: 36px;
-    color: #d9534f; /* Merah harga seperti contoh kebaya */
+    color: #d9534f; 
     font-weight: 700;
     margin-bottom: 25px;
 }
@@ -230,7 +221,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* Tombol Orange seperti contoh Kebaya */
 .btn-beli-wa {
     display: inline-block;
     background: #c374df;
@@ -249,41 +239,38 @@ body {
     transform: scale(1.05);
 }
 
-/* ===== 4. RESPONSIVE (UNTUK HP) ===== */
 @media (max-width: 992px) {
-    .products-grid { grid-template-columns: repeat(2, 1fr); } /* 2 kotak di tablet */
-    .detail-wrapper { flex-direction: column; gap: 30px; } /* Gambar di atas, teks di bawah */
+    .products-grid { grid-template-columns: repeat(2, 1fr); } 
+    .detail-wrapper { flex-direction: column; gap: 30px; } 
 }
 
 @media (max-width: 600px) {
-    .products-grid { grid-template-columns: 1fr; } /* 1 kotak di HP */
+    .products-grid { grid-template-columns: 1fr; } 
 }
-/* Container Utama Detail */
+
 .detail-wrapper {
-    display: flex;          /* Ini kunci agar kiri-kanan */
-    flex-direction: row;    /* Memaksa posisi sejajar horizontal */
+    display: flex;          
+    flex-direction: row;    
     align-items: flex-start;
-    gap: 50px;              /* Jarak antara gambar dan teks */
+    gap: 50px;             
     max-width: 1200px;
-    margin: 100px auto;     /* Jarak dari navbar */
+    margin: 100px auto;     
     padding: 20px;
 }
 
-/* Sisi Gambar (Kiri) */
 .image-left {
-    flex: 1;                /* Ambil 50% layar */
+    flex: 1;                
     max-width: 500px;
 }
 
 .image-left img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(138, 43, 226, 0.15); /* Bayangan ungu lembut */
+    box-shadow: 0 10px 30px rgba(138, 43, 226, 0.15); 
 }
 
-/* Sisi Informasi (Kanan) */
 .info-right {
-    flex: 1;                /* Ambil 50% sisanya */
+    flex: 1;               
     display: flex;
     flex-direction: column;
 }
@@ -296,7 +283,7 @@ body {
 
 .detail-price {
     font-size: 32px;
-    color: #8a2be2;         /* Ungu cantik */
+    color: #8a2be2;        
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -310,7 +297,7 @@ body {
 
 /* Tombol Beli */
 .btn-beli-wa {
-    background: #a65db4;    /* Kuning emas agar kontras dengan ungu */
+    background: #a65db4;    
     color: white;
     padding: 15px 40px;
     text-decoration: none;
@@ -321,7 +308,6 @@ body {
     width: fit-content;
 }
 
-/* Responsif untuk HP: Jadi tumpuk atas-bawah kalau layar kecil */
 @media (max-width: 768px) {
     .detail-wrapper {
         flex-direction: column;
@@ -371,11 +357,9 @@ body {
   text-decoration: none;
 }
 
-/* ===== FOOTER ===== */
-/* ===== FOOTER MODERN SOFT & CLEAN ===== */
 .footer {
-    background: #fdfbff; /* Warna putih dengan sentuhan ungu pastel ultra soft */
-    color: #4a3674; /* Teks ungu tua lembut agar mudah dibaca */
+    background: #fdfbff;
+    color: #4a3674; 
     padding: 60px 0 20px;
 }
 
@@ -408,7 +392,7 @@ body {
 }
 
 .footer-section a {
-    color: #76619c; /* Link menu dengan warna ungu medium yang teduh */
+    color: #76619c; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -426,7 +410,7 @@ body {
 .social-links a {
     width: 40px;
     height: 40px;
-    background: rgba(139, 92, 246, 0.08); /* Lingkaran ungu transparan yang soft */
+    background: rgba(139, 92, 246, 0.08);
     color: #8b5cf6;
     border-radius: 50%;
     display: flex;
@@ -444,7 +428,7 @@ body {
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
-    border-top: 1px solid rgba(139, 92, 246, 0.1); /* Garis pembatas tipis */
+    border-top: 1px solid rgba(139, 92, 246, 0.1); 
     color: #9382b3;
     font-size: 0.9rem;
 }
